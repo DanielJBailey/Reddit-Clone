@@ -1,0 +1,6 @@
+<h1><%= @sub.id ? "Edit Sub" : "New Sub" %></h1>
+<hr />
+<%= form_for @sub do |f| %>
+    <%= f.text_field :name, required: true, autofocus: true, placeholder: "Name", class: "form-input" %>
+    <%= f.submit %>
+<% end %>

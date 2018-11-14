@@ -1,9 +1,9 @@
 class SubsController < ApplicationController
-  # Both do the same thing
+  # # Both do the same thing
   before_action :set_sub, except: [:index, :new, :create]
-  # before_action :set_sub, only: [:show, :edit, :update, :destroy]
-  skip_before_action :verify_paid, only: :index
-  after_action :more_cowbell
+  # # before_action :set_sub, only: [:show, :edit, :update, :destroy]
+  # skip_before_action :verify_paid, only: :index
+  # after_action :more_cowbell
 
   def index
     @subs = Sub.all
